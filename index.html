@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Contact form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution { font-size: 11px; text-align: center; }
+        .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+</head>
+<body>
+    <div class="alert-box">
+       <h2><svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" fill="none" viewBox="0 0 20 21"><path fill="#fff" d="M14.28 7.72a.748.748 0 0 1 0 1.06l-5.25 5.25a.748.748 0 0 1-1.06 0l-2.25-2.25a.75.75 0 1 1 1.06-1.06l1.72 1.72 4.72-4.72a.75.75 0 0 1 1.06 0Zm5.47 2.78A9.75 9.75 0 1 1 10 .75a9.76 9.76 0 0 1 9.75 9.75Zm-1.5 0A8.25 8.25 0 1 0 10 18.75a8.26 8.26 0 0 0 8.25-8.25Z"/></svg>Message Sent!</h2>
+       <h3>Thanks for completing the form. We'll be in touch soon!</h3>
+    </div>
+    <div class="main">
+        <h1>Contact Us</h1>
+        <form>
+            <div class="names">
+                <div class="full-name">
+                    <label for="name">First name *</label>
+                    <input type="text" id="name" name="fname">
+                    <p id="name-error">This field is required</p>
+                </div>
+                <div class="last-name">
+                    <label for="name">Last Name *</label>
+                    <input type="text" id="name" name="lname">
+                    <p id="lname-error">This field is required</p>
+                </div>
+            </div>
+
+            <div class="email">
+                <label for="email">Email Address *</label>
+                <input type="text" id="email" name="email">
+                <p id="email-error">Please enter a valid email address</p>
+            </div>
+
+            <label for="query-type">Query Type *</label>
+            <div class="choices">
+                <label class="container" id="general-background-color">General Enquiry
+                    <input class="radio-checker" value="general" id="query-type" type="radio" name="general" placeholder="Email Address">
+                    <span class="checkmark"></span>
+                </label>
+
+                <label class="container" id="support-background-color">Support Request
+                    <input class="radio-checker" value="support" id="support" type="radio" name="general" placeholder="Email Address">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <p id="query-error">Please select a query type</p>
+
+            <div class="message">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" wrap="soft"></textarea>
+                <p id="message-error">This field is required</p>
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox" id="consent" name="consent" value="">
+                <label for="consent">I consent to being contacted by the team</label>
+            </div>
+            <p id="consent-error">To submit this form, please consent to being contacted</p>
+        </form>
+        <button>Submit</button>
+        <!-- Message Sent!
+        Thanks for completing the form. We'll be in touch soon! -->
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

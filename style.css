@@ -1,0 +1,215 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: hsl(148, 38%, 91%);
+    font-family: "Karla", sans-serif;
+    position: relative;
+}
+.alert-box{
+    position: absolute;
+    top: 40px;
+    background-color: hsl(187, 24%, 22%);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    display: none;
+}
+.alert-box h2{
+    font-size: 15px;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.alert-box h3{
+    font-size: 13px;
+    margin-top: 5px;
+    font-weight: 300;
+    color: hsl(186, 15%, 59%);
+}
+.main{
+    height: auto;
+    width: 500px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+}
+.names{
+    display: flex;
+    flex-direction: row;
+}
+.full-name{
+    width: 250px;
+    padding-bottom: 20px;
+}
+h1{
+    font-size: 21px;
+}
+.last-name{
+    width: 250px;
+}
+label{
+    font-size: 12px;
+    color: hsl(187, 24%, 22%);
+}
+#name{
+    width: 90%;
+    padding: 8px 0px;
+    margin-top: 8px;
+    border-radius: 6px;
+    border: 0.5px solid black;
+    padding-left: 5px;
+    font-family: "Karla", sans-serif;
+}
+#email{
+    width: 95%;
+    padding: 8px 0px;
+    margin-top: 8px;
+    border-radius: 6px;
+    border: 0.5px solid black;
+    padding-left: 5px;
+    font-family: "Karla", sans-serif;
+}
+#message{
+    width: 95%;
+    height: 30px;
+    margin-top: 8px;
+    border-radius: 6px;
+    border: 0.5px solid black;
+    padding-left: 5px;
+    font-family: "Karla", sans-serif;
+    padding-bottom: 50px;
+}
+.container{
+    border-radius: 6px;
+    border: 0.5px solid black;
+    display: flex;
+    align-items: center;
+    padding: 8px 0px;
+    width: 45%;
+    justify-content: left;
+    flex-direction: row-reverse;
+    margin-right: 22px;
+    accent-color: hsl(169, 82%, 27%);
+    cursor: pointer;
+}
+.choices{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+form{
+    margin-bottom: 10px;
+}
+button{
+    width: 96%;
+    margin-top: 8px;
+    border-radius: 6px;
+    border: 0.5px solid black;
+    margin-bottom: 20px;
+    padding: 8px 0px;
+    background-color: hsl(169, 82%, 27%);
+    color: white;
+    font-family: "Karla", sans-serif;
+    border: none;
+}
+#name:focus{
+    outline:none;
+    border: 1.2px solid hsl(169, 82%, 27%);
+}
+#email:focus{
+    outline:none;
+    border: 1.2px solid hsl(169, 82%, 27%);
+}
+#message:focus{
+    outline:none;
+    border: 1.2px solid hsl(169, 82%, 27%);
+}
+#consent{
+    accent-color: hsl(169, 82%, 27%);
+}
+p{
+    margin: 0px;
+    font-size: 12px;
+    color: red;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    display:none;
+}
+.email{
+    margin-bottom: 16px;
+}
+.message{
+    margin-top: 18px;
+}
+.checkbox{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+@media (max-width: 376px){
+    
+    .main{
+        width: unset;
+    }
+
+    h1{
+        width: 250px;
+    }
+    .full-name{
+        width: 255px;
+    }
+    .last-name{
+        width: 255px;
+    }
+    .names{
+        flex-direction: column;
+        width: 250px;
+    }
+    .email{
+        width: 240px;
+        margin-top: 10px;
+    }
+    .choices{
+        width: 250px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .container{
+        width: 235px;
+    }
+    #message{
+        width: 230px;
+    }
+    .message{
+        display: flex;
+        flex-direction: column;
+    }
+    label{
+        width: 250px;
+    }
+    .checkbox{
+        width: 260px;
+    }
+    button{
+        width: 240px;
+    }
+    form{
+        width: 200px;
+    }
+    .alert-box{
+        top: 10px;
+        padding: 10px 20px;
+    }
+    .alert-box h2{
+        font-size: 13px;
+    }
+    .alert-box h3{
+        font-size: 11px;
+    }
+}
